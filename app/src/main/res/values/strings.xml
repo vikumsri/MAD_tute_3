@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IntentsProj</string>
+    <string name="OK">Ok</string>
+    <string name="equation">Equation</string>
+    <string name="plus">+</string>
+    <string name="min">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+    <string name="number1">Number 1:</string>
+    <string name="number2">Number2</string>
+    <string name="HelloWorld">Hellow world</string>
+</resources>

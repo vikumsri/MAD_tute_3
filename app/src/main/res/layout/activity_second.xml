@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <TextView
+        android:id="@+id/Number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:text="@string/number1" />
+
+    <EditText
+        android:id="@+id/NumberText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/Number1"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/Number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/Number1"
+        android:text="@string/number2" />
+    <EditText
+        android:id="@+id/Number2text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@+id/NumberText"
+        android:layout_toRightOf="@+id/Number2"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/equation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/Number2text"
+        android:text="@string/equation" />
+
+    <Button
+        android:id="@+id/Plusbtn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:text="@string/plus"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:id="@+id/Minbtn"
+        android:layout_width="190dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Plusbtn"
+        android:text="@string/min"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/Multibtn"
+        android:layout_width="190dp"
+        android:layout_below="@+id/Plusbtn"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/multiply"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:id="@+id/divbtn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/Multibtn"
+        android:layout_below="@+id/Minbtn"
+        android:text="@string/divide"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
