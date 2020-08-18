@@ -40,7 +40,7 @@ public class SecondActivity extends AppCompatActivity {
 
                 int eqresult = Integer.parseInt(number1.getText().toString()) + Integer.parseInt(number2.getText().toString());
                 String strResult = String.valueOf(eqresult);
-                result.setText(strResult);
+                result.setText(number1.getText().toString()+" + "+number2.getText().toString()+" = "+strResult);
             }
 
             });
@@ -51,7 +51,7 @@ public class SecondActivity extends AppCompatActivity {
 
                 int eqresult = Integer.parseInt(number1.getText().toString()) - Integer.parseInt(number2.getText().toString());
                 String strResult = String.valueOf(eqresult);
-                result.setText(strResult);
+                result.setText(number1.getText().toString()+" - " + number2.getText().toString()+" = "+strResult);
             }
 
         });
@@ -62,7 +62,7 @@ public class SecondActivity extends AppCompatActivity {
 
                 int eqresult = Integer.parseInt(number1.getText().toString()) * Integer.parseInt(number2.getText().toString());
                 String strResult = String.valueOf(eqresult);
-                result.setText(strResult);
+                result.setText(number1.getText().toString()+" * "+number2.getText().toString()+" = "+strResult);
             }
 
         });
@@ -73,7 +73,7 @@ public class SecondActivity extends AppCompatActivity {
 
                 float eqresult = Float.parseFloat(number1.getText().toString()) / Float.parseFloat(number2.getText().toString());
                 String strResult = String.valueOf(eqresult);
-                result.setText(strResult);
+                result.setText(number1.getText().toString()+" / "+number2.getText().toString()+" = "+strResult);
             }
 
         });
