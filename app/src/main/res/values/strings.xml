@@ -7,6 +7,6 @@
     <string name="multiply">*</string>
     <string name="divide">/</string>
     <string name="number1">Number 1:</string>
-    <string name="number2">Number2</string>
+    <string name="number2">Number 2:</string>
     <string name="HelloWorld">Hellow world</string>
 </resources>
